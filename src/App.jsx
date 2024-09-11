@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import './App.css';
+import { NavBarComponent } from './NavBar';
+import { CarouselComponent } from './Carousel';
+import { makeServer } from './server';
+import { RenderComponent } from './Recipe';
+import { FooterComponent } from './Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
+  makeServer()
+  const [data, setData] = useState([]);
+  const[searchTerm, setSearchTerm] = useState('')
+  const[showCarousel, setShowCarousel] = useState(true)
+
+  useEffect(() => {
+    fetch('/api/users')
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error('Error fetching data:', error))
+  }, [])
+  
+  const filteredData = data.filter((item) =>
+    item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    item.catogory.toLowerCase().includes(searchTerm.toLowerCase())
+  )
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <NavBarComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      { !searchTerm && showCarousel && <CarouselComponent searchTerm={searchTerm} setSearchTerm={setSearchTerm} />}
+    
+      <RenderComponent data={filteredData} setShowCarousel={setShowCarousel}/> 
+      <FooterComponent/>
     </>
   )
-}
+} 
 
-export default App
+export default App; 

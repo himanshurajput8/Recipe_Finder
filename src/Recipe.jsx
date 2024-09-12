@@ -1,7 +1,7 @@
 import React, { useState } from "react"
+
 export function RenderComponent({data, setShowCarousel}){
   const [selectedRecipe, setSelectedRecipe] = useState(null)
-
   const handleRecipeClick = (item) => {
     setSelectedRecipe(item)
     setShowCarousel(false)

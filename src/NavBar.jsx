@@ -1,4 +1,17 @@
+import { useNavigate  } from "react-router-dom"
+
 export function NavBarComponent({searchTerm, setSearchTerm}){
+    const navigate = useNavigate()
+
+    const handleChange = (event) => {
+        const newSearchTerm = event.target.value
+        setSearchTerm(newSearchTerm)
+        if(newSearchTerm){
+            navigate(`/search/${newSearchTerm}`)
+        }else{
+            navigate('/')
+        }
+    }
     return(
         <header>
             <nav>
@@ -7,10 +20,10 @@ export function NavBarComponent({searchTerm, setSearchTerm}){
                 </div>
                 {/* <h2>Recipe Finder</h2> */}
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="#recipe">Recipe</a></li> 
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact Us</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/recipe">Recipe</a></li> 
+                    <li><a href="/about us">About Us</a></li>
+                    <li><a href="/contact us">Contact Us</a></li>
                 </ul>
                 <div>
                     <button>Sign Up</button>
@@ -19,7 +32,7 @@ export function NavBarComponent({searchTerm, setSearchTerm}){
             </nav>
             <div className="search-div">
             <input type="search" placeholder="Search.."
-                    value={searchTerm} onChange={(event)=> setSearchTerm(event.target.value)}
+                    value={searchTerm} onChange={handleChange}
                 />
             </div>
         </header>

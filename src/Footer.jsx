@@ -1,28 +1,28 @@
 export function FooterComponent(){
     return(
-        <footer>
-            <div>
-                <ul>
-                    <h3>About</h3>
-                    <li>Who we are</li>
-                    <li>Blog</li>
-                    <li>Work With Us</li>
-                    <li>Press kit</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <h3>Zomaverse</h3>
-                    <li>Feedind India</li>
-                    <li>Hyperpure</li>
-                    <li>Weather Union</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <h3>For Restaurants</h3>
-                    <li>Partner with us</li>
-                    <li>Apps For you</li>
+            <footer>~~~
+                <div>
+                    <ul>
+                        <h3>About</h3>
+                        <li>Who we are</li>
+                        <li>Blog</li>
+                        <li>Work With Us</li>
+                        <li>Press kit</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3>Zomaverse</h3>
+                        <li>Feedind India</li>
+                        <li>Hyperpure</li>
+                        <li>Weather Union</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <h3>For Restaurants</h3>
+                        <li>Partner with us</li>
+                        <li>Apps For you</li>
                 </ul>
             </div>
             <div>

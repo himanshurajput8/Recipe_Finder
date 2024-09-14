@@ -1,10 +1,15 @@
 import React, { useState } from "react"
+import { useNavigate, useParams } from "react-router-dom"
+
 
 export function RenderComponent({data, setShowCarousel}){
   const [selectedRecipe, setSelectedRecipe] = useState(null)
+  const navigate = useNavigate()  
+
   const handleRecipeClick = (item) => {
     setSelectedRecipe(item)
     setShowCarousel(false)
+    navigate(`/recipe/${item.id}`) 
   }
     return(
         <>
@@ -42,4 +47,4 @@ export function RenderComponent({data, setShowCarousel}){
         </> 
     )
 } 
- 
+  

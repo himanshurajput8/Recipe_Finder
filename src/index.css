@@ -117,6 +117,7 @@ input[type="search"]:hover{
 }
 .selected-container{
   display: flex;
+  align-items: center;
   gap: 200px;
   justify-content: center;
 }
@@ -128,18 +129,21 @@ input[type="search"]:hover{
 .recipe-div{
   line-height: 30px;
   width: 400px;
+  padding: 5px 20px;
 }
+
 .recipe-btn{
   margin-bottom: 10px;
 }
 footer{
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   background-color: #f8f8f8;
-  padding: 20px;
+  padding: 50px 0px;
   margin-top: 50px;
-  height: 300px;
+  /* height: 300px; */
 }
 footer ul li{
   list-style-type: none;

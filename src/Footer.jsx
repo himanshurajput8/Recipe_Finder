@@ -1,6 +1,6 @@
 export function FooterComponent(){
     return(
-            <footer>~~~
+            <footer>
                 <div>
                     <ul>
                         <h3>About</h3>

@@ -161,7 +161,7 @@ footer span i{
 .footer-icon-div{
   line-height: 30px;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
   nav ul{
     display: none;
   }

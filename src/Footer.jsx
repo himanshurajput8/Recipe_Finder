@@ -3,7 +3,7 @@ export function FooterComponent(){
             <footer>
                 <div>
                     <ul>
-                        <h3>About</h3>
+                        <h3> About</h3>
                         <li>Who we are</li>
                         <li>Blog</li>
                         <li>Work With Us</li>
@@ -20,9 +20,9 @@ export function FooterComponent(){
                 </div>
                 <div>
                     <ul>
-                        <h3> For Restaurants</h3>
-                        <li> Partner with us</li>
-                        <li> Apps For you</li>
+                        <h3>For Restaurants</h3>
+                        <li>Partner with us</li>
+                        <li>Apps For you</li> 
                 </ul>
             </div>
             <div>
@@ -30,7 +30,7 @@ export function FooterComponent(){
                     <h3>Learn more</h3>
                     <li>Privacy</li>
                     <li>Security</li>
-                    <li>Terms</li>
+                    <li> Terms</li>
                     <li>Sitemap</li>
                 </ul>
             </div>

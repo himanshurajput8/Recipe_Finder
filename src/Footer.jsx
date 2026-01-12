@@ -20,8 +20,8 @@ export function FooterComponent(){
                 </div>
                 <div>
                     <ul>
-                        <h3>For Restaurants</h3>
-                        <li>Partner with us</li>
+                        <h3> For Restaurants</h3>
+                        <li> Partner with us</li>
                         <li>Apps For you</li> 
                 </ul>
             </div>

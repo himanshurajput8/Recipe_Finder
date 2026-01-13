@@ -15,14 +15,14 @@ export function FooterComponent(){
                         <h3>Zomaverse</h3>
                         <li>Feedind India</li>
                         <li>Hyperpure</li>
-                        <li>Weather Union</li>
+                        <li> Weather Union</li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <h3> For Restaurants</h3>
+                        <h3>For Restaurants</h3>
                         <li> Partner with us</li>
-                        <li>Apps For you</li> 
+                        <li> Apps For you</li> 
                 </ul>
             </div>
             <div>

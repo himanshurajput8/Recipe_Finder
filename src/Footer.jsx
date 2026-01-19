@@ -13,9 +13,9 @@ export function FooterComponent(){
                 <div>
                     <ul>
                         <h3>Zomaverse</h3>
-                        <li>Feedind India</li>
-                        <li> Hyperpure</li>
-                        <li> Weather Union</li>
+                        <li> Feedind India</li>
+                        <li>Hyperpure</li>
+                        <li>Weather Union</li>
                     </ul>
                 </div>
                 <div>

@@ -12,10 +12,10 @@ export function FooterComponent(){
                 </div>
                 <div>
                     <ul>
-                        <h3> Zomaverse</h3>
-                        <li> Feedind India</li>
-                        <li>Hyperpure</li>
-                        <li> Weather Union</li>
+                        <h3>Zomaverse</h3>
+                        <li>Feedind India</li>
+                        <li> Hyperpure</li>
+                        <li>Weather Union</li>
                     </ul>
                 </div>
                 <div>
